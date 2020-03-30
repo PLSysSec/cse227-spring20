@@ -1,0 +1,193 @@
+<meta charset="utf-8"><!-- -*- markdown -*- -->
+    **CSE 227: Graduate Computer Security**
+         [*Deian Stefan*](https://cseweb.ucsd.edu/~dstefan/)
+
+About
+==============================================================
+
+This course focuses on computer security, exploring a range of topics – from
+systems security, to web security, edge security, and privacy – to illustrate
+some of the modern research challenges in the area and the standards for
+advancement.  It is not designed to be a tutorial course, but rather to give
+students the context to understand current security research and evaluate their
+interest in the field.  The course will examine both the defensive and
+offensive side of the field. At the conclusion of the course, the students will
+have the foundation to conduct research in computer security and to apply the
+latest security research to a particular area of practice. 
+
+Lectures:
+: Monday and Wednesday, 5:00--6:00 PM, on Zoom
+Staff:
+: **Instructor**: Deian Stefan <deian@cs.ucsd.edu>
+
+: **Teaching Assistant**: Matthew Kolosick <mkolosick@eng.ucsd.edu>
+
+Office hours:
+: **Deian**: Friday, 10:00 AM--11:00AM, on Zoom
+
+: **Matt**: Friday, 10:00 AM--11:00AM, on Zoom
+
+Zoom information:
+: See course Canvas site. If you are not enrolled in this class but want to
+  participate in the class remotely please email the instructor. To facilitate
+  an open discussion, the in-class discussion will *not* be recorded.
+
+Calendar and Readings
+==============================================================
+
+
+Mon Mar 30 2020: Introduction
+  - *Reading*:
+    - [How to Read a Paper](papers/keshav:how.pdf) by S. Keshav 
+    - [Reflections on Trusting Trust](papers/thompson:reflections.pdf) by K. Thompson
+
+Wed Apr 1 2020: Low-level vulnerabilities and exploits
+  - *Reading*:
+    - [Low-Level Software Security by Example](papers/erlingsson:low.pdf) by U. Erlingsson et al.
+    - [Exploit Programming: From Bufer Overflows to "Weird Machines" and Theory of Computation](papers/bratus:exploit.pdf) by S. Bratus et al.
+  - *Optional reading*:
+    - [A Modern History of Offensive Security Research](https://docs.google.com/presentation/d/19HfkIojyLE8L8X8aZT-lJont96JqIg4PqEhb2juIK2c/edit#slide=id.p) by D. Dai Zovi
+    - [How Memory Safety Violations Enable Exploitation of Programs](papers/payer:how.pdf) by M. Payer
+
+Mon Apr 6 2020: Static analysis
+  - *Reading*:
+    - [How to Build Static Checking Systems Using Orders of Magnitude Less Code](papers/brown:how.pdf) by F. Brown et al.
+    - [Scaling Static Analyses at Facebook](papers/distefano:scaling.pdf) by D. Distefano et al.
+  - *Optional reading*:
+    - [A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in the Real World](papers/bessey:a-few.pdf) by A. Bessey et al.
+    - [Lessons from Building Static Analysis Tools at Google](papers/sadowski:lessons.pdf) by C. Sadowski et al.
+
+Wed Apr 8 2020: Symbolic execution
+  - *Reading*:
+    - [Sys: A Static/Symbolic Tool for Finding Good Bugs in Good (Browser) Code](papers/brown:sys.pdf) by F. Brown et al.
+    - [AEG: Automatic Exploit Generation](papers/avgerinos:aeg.pdf) by T. Avgerinos et al.
+  - *Optional reading*:
+    - [EXE: Automatically Generating Inputs of Death](papers/cadar:exe.pdf) by C. Cadar et al.
+
+Fri Apr 10 2020: Project proposal
+
+  - *Expectation*: At the very least, you should have a clear problem
+    statement, brief literature survey (e.g., to understand how and if this
+    done before), evaluation questions and approach, and brief risk
+    analysis (e.g., to understand the best and worst case outcome of the
+    project).
+
+Mon Apr 13 2020: Fuzzing
+  - *Reading*:
+      - [FuzzGen: Automatic Fuzzer Generation](papers/ispoglou:fuzzgen.pdf) by K. K. Ispoglou
+      - [Evaluating Fuzz Testing](papers/klees:evaluating.pdf) by G. Klees et al.
+  - *Optional reading*:
+      - [QSYM:A Practical Concolic Execution EngineTailored for Hybrid Fuzzing](papers/yun:qsym.pdf) by I. Yun et al.
+
+Wed Apr 15 2020: Control flow integrity
+  - *Reading*:
+    - [Security Analysis of Processor Instruction Set Architecture for Enforcing Control-Flow Integrity](papers/shanbhogue:cet.pdf) by V. Shanbhogue et al.
+    - [Control-Flow Bending: On the Effectiveness of Control-Flow Integrity](papers/carlini:cfb.pdf) by N. Carlini et al.
+  - *Optional reading*:
+    - [Control-Flow Integrity: Precision, Security, and Performance](papers/burow:cfi.pdf) by N. Burow et al.
+
+Mon Apr 20 2020: Software fault isolation
+  - *Reading*:
+    - [Principles and Implementation Techniques of Software-Based Fault Isolation](papers/tan:sfi.pdf) by G. Tan
+    - [RockJIT: Securing Just-In-Time Compilation Using Modular Control-Flow Integrity](papers/niu:rockjit.pdf) by B. Niu and G. Tan
+
+Wed Apr 22 2020: Sandboxing
+ - *Reading*:
+    - [Retrofitting Fine Grain Isolation in the Firefox Renderer](papers/narayan:retrofitting.pdf) by S. Narayan et al.
+    - [Site Isolation: Process Separation for Web Sites within the Browser](papers/reis:site.pdf) by C. Reis et al.
+ - *Optional reading*:
+    - [The high-level benefits of low-level sandboxing](papers/sammler:the-high-level.pdf) by M. Sammler et al.
+
+Mon Apr 27 2020: Capability-based security
+  - *Reading*:
+    - [Capsicum: Practical Capabilities for UNIX](papers/capsicum.pdf) by R. Watson et. al
+    - [CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization](papers/watson:cheri.pdf) by R. Watson et. al
+  - *Optional reading*:
+    - [CloudABI](https://www.youtube.com/watch?v=3N29vrPoDv8) by E. Schouten
+    - [WASI: WebAssembly System Interface](https://github.com/bytecodealliance/wasmtime/blob/master/docs/WASI-overview.md)
+
+Wed Apr 29 2020: Verification
+  - *Reading*:
+    - [Modular Verification for Computer Security](papers/appel:modular.pdf) by A. Appel
+    - [Toward compositional verification of interruptible OS kernels and device drivers](papers/chen:toward.pdf) by H. Chen et al.
+  - *Optional reading*:
+    - [seL4: Formal Verificaiton of an OS Kernel](papers/sel4.pdf) by G. Klein et al. (Shraddha Barke)
+    - [Hyperkernel: Push-Button Verification of an OS Kernel](papers/hyperkernel.pdf) by L. Nelson et al.
+
+Fri May 1 2020: Status update
+
+Mon May 4 2020: WebAssembly
+  - *Reading*:
+    - [Bringing the Web up to Speed with WebAssembly](papers/haas:wasm.pdf) by A. Haas et al.
+    - [Lucet: A Compiler and Runtime for High-Concurrency Low-Latency Sandboxing](https://www.youtube.com/watch?v=WddPA0U6v2A) by T. McMullen
+  - *Optional reading*:
+    - [Hijacking the control flow of a WebAssembly program](https://www.fastly.com/blog/hijacking-control-flow-webassembly) by J. Foote
+    - [WebAssembly doesn't make unsafe languages safe (yet)](https://00f.net/2018/11/25/webassembly-doesnt-make-unsafe-languages-safe/) by F. Denis
+
+Wed May 6 2020: JavaScript JIT attacks
+ - *Reading*:
+    - [Compile Your Own Type Confusion: Exploiting Logic Bugs in JavaScript JIT Engines](http://phrack.org/papers/jit_exploitation.html) by saelo
+    - [Just-In-Time Code Reuse:On the Effectiveness of Fine-Grained Address Space Layout Randomization](papers/snow:jit.pdf) by Snow et al.
+ - *Optional reading*:
+    - [A case study of JavaScriptCore and CVE-2016-4622](http://phrack.org/papers/attacking_javascript_engines.html) by saelo
+    - [Finding and Preventing Bugs in JavaScript Bindings](papers/brown:finding.pdf) by F. Brown et al.
+    - [CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines](papers/han:codealchemist.pdf) by H. Han et al.
+
+Mon May 11 2020: JavaScript JIT defenses
+ - *Reading*:
+    - [Towards a verified range analysis for JavaScript JITs](papers/brown:vera.pdf) by F. Brown et al.
+    - [NoJITsu: Locking Down JavaScript Engines](papers/park:nojitsu.pdf)
+
+Wed May 13 2020: TBA
+
+Mon May 18 2020: TBA
+
+Wed May 20 2020: TBA
+
+Fri May 22 2020: Status update
+
+Mon May 25 2020: No class
+
+Wed May 27 2020: TBA
+
+Mon Jun 1 2020: TBA
+
+Wed Jun 3 2020: TBA
+
+
+Evaluation
+==============================================================
+
+Since the primary goal of this course is to prepare to you to do research, the
+evaluation for this course is simple: (1) participate in discussions and (2)
+work on a research project.
+
+Participation (30%)
+--------------------------------------------------------------
+
+You are expected to read the assigned paper(s) before each meeting. In class we
+will discuss the interesting parts of the paper(s). You are expected to do any
+background reading on your own and come prepared with questions and an
+evaluation of the paper.
+
+If you are a PhD or MS student, you are also expected to lead a paper
+discussion. Student-led discussions will be in groups of 2-3.
+
+Research project (70%)
+--------------------------------------------------------------
+
+You will work on projects in groups of 3-5.  The goal of the project is to
+conduct original research in Computer Security. You are encouraged to come up
+with your own project idea, but we have a few ideas that are well-scoped for a
+quarter project.
+
+At the end of the quarter, you are expected to turn in a short research paper
+(6-10 pages) and give a 10 minute talk. We will have periodic status updates to
+help you stay on track.
+
+
+<style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js"></script>
+<script>
+  window.alreadyProcessedMarkdeep || (document.body.style.visibility="visible");
+  markdeepOptions= {tocStyle: 'short', sortScheduleLists: false };
+</script>
